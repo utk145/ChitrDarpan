@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ChitrDarpan</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./style.css">
     <link rel="shortcut icon" href="https://img.icons8.com/?size=1x&id=11444&format=png" type="image/x-icon">
-    <script src="./script.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script src="./script.js" defer></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>   <!--https://swiperjs.com/get-started#use-swiper-from-cdn  -->
+
 </head>
 <body>
     
@@ -88,12 +90,12 @@
                 <div class="about_img">
                     <div class="about_img_bg"></div>
                     <div class="about_img_lg">
-                        <img src="./images_webp/about.webp" alt="About-Image">
-                        <!-- <img id="aboutImage" src="https://source.unsplash.com/752x912/?woman" alt="About-Image"> -->
+                        <!-- <img src="./images_webp/about.webp" alt="About-Image" id="aboutImage"> -->
+                        <img id="aboutImage" src="https://source.unsplash.com/752x912/?woman,face" alt="About-Image">
                     </div>
                     <div class="about_img_sm">
-                        <img src="./images_webp/about.webp" alt="About-Image">
-                        <!-- <img id="aboutImage" src="https://source.unsplash.com/752x912/?woman" alt="About-Image"> -->
+                        <!-- <img src="./images_webp/about.webp" alt="About-Image" id="aboutImage"> -->
+                        <img id="aboutImage" src="https://source.unsplash.com/752x912/?woman,face" alt="About-Image">
                     </div>
                 </div>
             </div>
@@ -109,6 +111,97 @@
 
 
 
+    <section id="gallery">
+        <div class="container gallery_container swiper mySwiper">
+            <div class="gallery_head">
+                <h2 class="gallery_title">Our Gallery</h2>
+                <div class="empty gallery_empty"></div>
+            </div>
+            <p>Explore our stunning collection of photographs that showcase the beauty of the world. From mesmerizing landscapes to captivating portraits, our gallery is a visual journey that will inspire and evoke emotions.</p>
+            <div class="swiper-wrapper">
+                <article class="swiper-slide">
+                    <img src="./images_webp/gallery1.webp">
+                </article>
+                <article class="swiper-slide">
+                    <img src="./images_webp/gallery2.webp">
+                </article>
+                <article class="swiper-slide">
+                    <img src="./images_webp/gallery3.webp">
+                </article>
+                <article class="swiper-slide">
+                    <img src="./images_webp/gallery4.webp">
+                </article>
+                <article class="swiper-slide">
+                    <img src="./images_webp/gallery5.webp">
+                </article>
+                <article class="swiper-slide">
+                    <img src="./images_webp/gallery6.webp">
+                </article>
+                <article class="swiper-slide">
+                    <img src="./images_webp/gallery7.webp">
+                </article>
+                <article class="swiper-slide">
+                    <img src="./images_webp/gallery8.webp">
+                </article>
+                <article class="swiper-slide">
+                    <img src="./images_webp/gallery9.webp">
+                </article>
+                <article class="swiper-slide">
+                    <img src="./images_webp/gallery10.webp">
+                </article>
+                <article class="swiper-slide">
+                    <img src="./images_webp/gallery11.webp">
+                </article>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
 
+
+
+
+
+
+    <section id="exhibitions">
+        <div class="container exhibitions_container">
+            <h2 class="exhibitions_title">Exhibitions</h2>
+            <div class="empty exhibitions_empty"></div>
+            <div class="exhibitions_head">
+                <p>Explore a collection of captivating exhibitions showcasing the wonders of art and culture. Immerse yourself in a world of creativity, innovation, and inspiration.</p>
+                <a href="mailto:connectWithMEOngithubutk145@demo.com" class="contact_btn exhibitions_btn">
+                    <i class="uil uil-arrow-up-right"></i>
+                    <p>YO!! GET IN TOUCH WITH ME</p>
+                </a>     
+            </div>
+            <div class="exhibitions_gallery">
+                <article>
+                    <img src="./images_webp/ev.webp" alt="exhibitions-image">
+                </article>
+                <article>
+                    <img src="./images_webp/e1.webp" alt="exhibitions-image">
+                </article>
+                <article>
+                    <img src="./images_webp/e2.webp" alt="exhibitions-image">
+                </article>
+                <article>
+                    <img src="./images_webp/eh.webp" alt="exhibitions-image">
+                </article>
+                <article>
+                    <img src="./images_webp/e3.webp" alt="exhibitions-image">
+                </article>
+                <article>
+                    <img src="./images_webp/e4.webp" alt="exhibitions-image">
+                </article>
+                <article>
+                    <img src="./images_webp/e5.webp" alt="exhibitions-image">
+                </article>
+            </div>
+        </div>
+    </section>
+
+
+
+
+   
 </body>
 </html>

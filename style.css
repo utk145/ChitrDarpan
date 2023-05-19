@@ -320,6 +320,7 @@ header {
 
 
 
+/************* About **************/
 
 #about {
     margin-top: 18rem;
@@ -334,8 +335,9 @@ header {
 
 .about_title {
     position: absolute;
-    top: -9rem;
+    top: -5rem;
     z-index: 1;
+    opacity: .5;
 }
 
 .about_btn {
@@ -393,11 +395,11 @@ header {
     bottom: 0;
 }
 
-.about_right{
+.about_right {
     margin-left: 5rem;
 }
 
-.about_right p{
+.about_right p {
     margin: 0 4rem 1.4rem 0;
 }
 
@@ -406,8 +408,128 @@ header {
 
 
 
+/************* Gallery **************/
+
+#gallery {
+    margin-top: 12rem;
+}
+
+.gallery_head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery_container p {
+    width: 45rem;
+}
+
+.swiper-wrapper {
+    margin-top: 5rem;
+    height: 37rem;
+    padding-bottom: 5rem;
+}
+
+.swiper-slide {
+    border: .5rem solid var(--color-bg-4);
+    height: fit-content;
+    max-height: 36rem;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+
+.swiper-slide:hover {
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, .4);
+}
+
+.swiper-slide img {
+    filter: saturate(0);
+    transition: var(--transition);
+}
+
+.swiper-slide:hover img {
+    filter: saturate(1);
+}
+
+
+.swiper-pagination-bullet {
+    background: var(--color-primary);
+}
 
 
 
 
 
+/************* Exhibitions **************/
+#exhibitions {
+    margin-top: 10rem;
+}
+
+.exhibitions_container {
+    position: relative;
+}
+
+.exhibitions_empty {
+    width: 26rem;
+    position: absolute;
+    right: 14rem;
+    top: 0;
+}
+
+.exhibitions_head {
+    display: grid;
+    grid-template-columns: auto 10rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.exhibitions_head>p {
+    width: 45rem;
+}
+
+.exhibitions_btn {
+    color: var(--color-primary);
+}
+
+
+.exhibitions_btn:hover {
+    transform: translateY(-1rem);
+}
+
+
+.exhibitions_gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 5rem;
+    gap: 3rem;
+}
+
+.exhibitions_gallery article {
+    border: .5rem solid var(--color-bg-4);
+    /* height: fit-content; */
+    transition: var(--transition);
+}
+
+
+.exhibitions_gallery article:nth-child(4) {
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+
+.exhibitions_gallery article:nth-child(1) {
+    grid-row: 1/3;
+}
+
+.exhibitions_gallery article img {
+    height: 100%;
+    filter: saturate(0);
+    transition: 500ms ease;
+}
+
+.exhibitions_gallery article:hover img {
+    filter: saturate(1);
+}
+
+.exhibitions_gallery article:hover{
+    box-shadow: 0 5rem 5rem rgba(0, 0, 0, .5);
+}

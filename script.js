@@ -35,4 +35,58 @@ aboutImage.addEventListener('error', () => {
     aboutImage.src = './images_webp/about.webp';
 });
 
+aboutImage.addEventListener('load', () => {
+    // Check if the loaded image is empty or undefined
+    if (!aboutImage.complete || aboutImage.naturalWidth === 0) {
+        aboutImage.src = './images_webp/about.webp';
+    }
+});
+
+/* Notes:-
+In JavaScript, the complete property and naturalWidth property are attributes of the HTMLImageElement object. Here's what they represent:
+
+complete: The complete property indicates whether the image has finished loading or not. It returns a boolean value (true or false). When complete is true, it means the image has finished loading. Conversely, when complete is false, it means the image is still loading or failed to load.
+
+naturalWidth: The naturalWidth property represents the intrinsic width of the image in pixels. It provides the actual width of the image file, regardless of any resizing or scaling applied through CSS or HTML attributes. If the image fails to load, naturalWidth will be set to 0.
+
+In the context of the code snippet I provided, these properties are used to determine if the loaded image is empty or undefined. If the complete property is false or the naturalWidth is 0, it implies that the image failed to load or is empty. In such cases, the fallback image URL is set as the source of the aboutImage element.
+
+*/
+
+
+
+
+
+
+// Swiper Js For Gallery Section
+document.addEventListener('DOMContentLoaded', () => {
+    const swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        // // Handling Responsiveness
+        breakpoints: {
+            599: {
+                slidesPerView: 2,
+                spaceBetween: 40
+            },
+            1023: {
+                slidesPerView: 3,
+                spaceBetween: 60
+            }
+        }
+    });
+})
+
+
+
+
+
+
+
+
+
 
