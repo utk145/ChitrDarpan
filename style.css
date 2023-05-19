@@ -305,14 +305,109 @@ header {
     animation: spinText 30s linear infinite;
 }
 
-.contact_btn p span{
+.contact_btn p span {
     position: absolute;
-    transform-origin:.3rem 5rem;
+    transform-origin: .3rem 5rem;
     letter-spacing: .4px;
 }
 
-@keyframes spinText{
-    to{
+@keyframes spinText {
+    to {
         transform: rotate(360deg);
     }
 }
+
+
+
+
+
+#about {
+    margin-top: 18rem;
+}
+
+.about_container {
+    display: grid;
+    grid-template-columns: 10rem 26rem auto;
+    gap: 5rem;
+    position: relative;
+}
+
+.about_title {
+    position: absolute;
+    top: -9rem;
+    z-index: 1;
+}
+
+.about_btn {
+    color: var(--color-primary-variant);
+    align-self: end;
+}
+
+.about_btn:hover {
+    transform: translateY(-1rem);
+    color: var(--color-primary);
+}
+
+
+.about_img {
+    position: relative;
+}
+
+.about_img_lg {
+    position: relative;
+    left: 1rem;
+    bottom: 1rem;
+    filter: saturate(0) brightness(.3);
+    transition: 500ms ease;
+}
+
+.about_img_bg {
+    width: 16rem;
+    height: 24rem;
+    position: absolute;
+    bottom: 0;
+    background: var(--color-bg-4);
+}
+
+.about_img_sm {
+    position: absolute;
+    top: 3rem;
+    left: 8rem;
+    height: 22rem;
+    width: 22rem;
+    overflow: hidden;
+    box-shadow: 2rem 2rem 2rem rgba(0, 0, 0, .3);
+    transition: 500ms ease;
+}
+
+
+.about_img:hover .about_img_sm {
+    opacity: 0;
+}
+
+.about_img:hover .about_img_lg {
+    filter: saturate(1) brightness(1);
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, .2);
+    border: 1rem solid var(--color-bg-4);
+    left: 0;
+    bottom: 0;
+}
+
+.about_right{
+    margin-left: 5rem;
+}
+
+.about_right p{
+    margin: 0 4rem 1.4rem 0;
+}
+
+
+
+
+
+
+
+
+
+
+
