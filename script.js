@@ -105,14 +105,14 @@ navClose.addEventListener("click", () => {
 })
 
 
-nav.querySelectorAll("li a").forEach(navLink => {
-    navLink.addEventListener("click", () => {
-        // We close the nav
-        nav.style.display = "none";
-        navOpen.style.display = "inline-block";
-        navClose.style.display = "none"
-    })
-})
+// nav.querySelectorAll("li a").forEach(navLink => {
+//     navLink.addEventListener("click", () => {
+//         // We close the nav
+//         nav.style.display = "none";
+//         navOpen.style.display = "inline-block";
+//         navClose.style.display = "none"
+//     })
+// })
 
 
 
