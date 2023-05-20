@@ -86,7 +86,50 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+// Hamberger menu
+const nav = document.querySelector(".nav_links");
+const navOpen = document.querySelector("#nav_toggle-open");
+const navClose = document.querySelector("#nav_toggle-close");
+
+navOpen.addEventListener("click", () => {
+    nav.style.display = "flex";
+    navOpen.style.display = "none";
+    navClose.style.display = "inline-block"
+})
 
 
+navClose.addEventListener("click", () => {
+    nav.style.display = "none";
+    navOpen.style.display = "inline-block";
+    navClose.style.display = "none"
+})
+
+
+nav.querySelectorAll("li a").forEach(navLink => {
+    navLink.addEventListener("click", () => {
+        // We close the nav
+        nav.style.display = "none";
+        navOpen.style.display = "inline-block";
+        navClose.style.display = "none"
+    })
+})
+
+
+
+
+
+
+if (document.body.clientWidth < 1024) {
+
+    nav.querySelectorAll("li a").forEach(navLink => {
+        navLink.addEventListener("click", () => {
+            // We close the nav
+            nav.style.display = "none";
+            navOpen.style.display = "inline-block";
+            navClose.style.display = "none"
+        })
+    })
+
+}
 
 
